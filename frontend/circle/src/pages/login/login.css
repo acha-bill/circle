@@ -1,0 +1,12 @@
+.title-label {
+    font-size: 2.5rem;
+}
+.sub-title {
+    font-size: 14px;
+}
+.body {
+    height: calc(100vh - 90px); /* 60px for header + 30px for footer */
+}
+.error-text {
+    color: red
+}

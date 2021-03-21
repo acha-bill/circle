@@ -1,0 +1,17 @@
+.top-bar {
+    border: 1px solid gainsboro
+}
+.chat-area {
+    border: 1px solid gainsboro;
+}
+.answer {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.play-area{
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+.body {
+    height: calc(100vh - 90px); /* 60px for header + 30px for footer */
+}
