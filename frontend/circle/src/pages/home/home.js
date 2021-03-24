@@ -46,7 +46,10 @@ function HomePage() {
 						<Card.Body>
 							<Row>
 								<Col md={2}>Armand: </Col>
-								<Col className="text-align-left" md={8}> Names of boys starting with B</Col>
+								<Col className="text-left" md={8}>
+									{' '}
+									Names of boys starting with B
+								</Col>
 								<Col md={2}>Action timer: 5s</Col>
 							</Row>
 						</Card.Body>
@@ -55,8 +58,8 @@ function HomePage() {
 			</Row>
 			<Row>
 				<Col md={2}>
-					<Card className="text-center">
-						<Card.Header>In Channel</Card.Header>
+					<Card className="text-center fullHeight cardT">
+						<Card.Header className="card-headerT">In Channel</Card.Header>
 						<Card.Body>
 							<Row className="usersProfile">
 								<Image
@@ -114,12 +117,14 @@ function HomePage() {
 					</Card>
 				</Col>
 				<Col md={8}>
-					<Card className="text-center">
-						<Card.Body>
+					<Card className="text-center cardT">
+						<Card.Header className="card-headerT">
 							<div className="d-flex justify-content-between align-items-center play-area-head">
 								<span>Thomas</span> <FontAwesomeIcon icon={faArrowLeft} /> <span>Richard</span>{' '}
 								<FontAwesomeIcon icon={faArrowRight} /> <span>Ivan</span>
-							</div>
+							</div>{' '}
+						</Card.Header>
+						<Card.Body>
 							<div className="play-area-view d-flex justify-content-center flex-column mb-3">
 								<span className="answer mb-2 mt-4">Bobdinga</span>
 								<span className="approval mb-2">30% approved</span>
@@ -175,16 +180,46 @@ function HomePage() {
 					</Card>
 				</Col>
 				<Col md={2}>
-					<Card className="text-center">
-						<Card.Header>Chat</Card.Header>
-						<Card.Body>
+					<Card className="text-center fullHeight cardT">
+						<Card.Header className="card-headerT">Chat</Card.Header>
+						<Card.Body className="chatBody">
+							<Row>
+								<Col md={3} style={{ padding: '0px' }}>
+									<Image
+										className="profileImge"
+										src={process.env.PUBLIC_URL + '/profile.png'}
+										width="25"
+										height="25"
+										roundedCircle
+									/>
+								</Col>
+								<Col md={9} style={{ padding: '0px' }}>
+									<p className="chatTextMe text-left">Mark was the one writing this</p>
+								</Col>
+							</Row>
+							<Row style={{ paddingTop: '10px' }}>
+								<Col md={9} style={{ padding: '0px' }}>
+									<p className="chatTextMe text-left">Mark was the one writing this</p>
+								</Col>
+								<Col md={2} style={{ padding: '0px' }}>
+									<Image
+										className="profileImage"
+										src={process.env.PUBLIC_URL + '/profile.png'}
+										width="25"
+										height="25"
+										roundedCircle
+									/>
+								</Col>
+							</Row>
+						</Card.Body>
+						<Card.Footer className="text-muted">
 							<div className="play-area-input input-group">
 								<input className="form-control" />{' '}
 								<button className="ml-1 btn btn-info">
 									<FontAwesomeIcon className="ml-1" icon={faPaperPlane} />
 								</button>
 							</div>
-						</Card.Body>
+						</Card.Footer>
 					</Card>
 				</Col>
 			</Row>
