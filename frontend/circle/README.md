@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# The Game
+
+<details>
+    <summary>Installation</summary>
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +73,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
+
+## Requirements (How Game works)
+- Users Log In to game 
+- `First player` asks a question 
+- `First player` answers question 
+- Each player votes on `First player`'s answer
+- `n-th player` answers question 
+- Each player votes on `n-th player`'s answer
+exit when 
+- everybody has answered 
+
+## Tasks List 
+[] Define data states 
+```
+user : {
+    name: ,
+    vote: , 
+    score: ,
+    question: ,
+    status: True,
+}
+
+game : {
+    answeringDelay : 5s,
+    nextPerson: ,
+    previousPerson: , 
+    currentQuestion: , 
+    status: ongoing/ended,
+}
+```
+[] Reducers boilerplates
+[] Create realtime communication (sockets) 
+[] Build login system 
