@@ -15,3 +15,24 @@
 .body {
     height: calc(100vh - 90px); /* 60px for header + 30px for footer */
 }
+.container {
+    max-width: 100%;
+    padding: 3%;
+}
+.nameBar {
+    padding: 10px 0;
+}
+.rounded-circle {
+    object-fit: cover;
+}
+.userName {
+   text-align: left;
+    line-height: 15px;
+    padding: 10px;
+}
+.usersProfile {
+    padding: 0 10px;
+}
+.text-align-left {
+    text-align: left;
+}
